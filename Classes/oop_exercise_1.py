@@ -29,6 +29,17 @@ class Resturant:
             print("You cannot turn back this count")
 
 
+class IceCreamStand(Resturant):
+    def __init__(self, name, cuisine):
+        super().__init__(name, cuisine)
+        self.flavours = ["chocolate", "vanilla", "peanut"]
+
+    def desc_flavours(self):
+        print(f"Our ice cream flavours are:")
+        for flavour in self.flavours:
+            print(flavour)
+
+
 class User:
 
     def __init__(self, first_name, last_name):
@@ -47,6 +58,17 @@ class User:
 
     def reset_login_attempts(self):
         self.login_attempts = 0
+
+
+class Admin(User):
+    def __init__(self, name, cuisine):
+        super().__init__(name, cuisine)
+        self.privilages = ["Can add post", "Can delete post"]
+
+    def desc_privilages(self):
+        print(f"Your privilages are:")
+        for privilage in self.privilages:
+            print(privilage)
 
 
 # Task 1
@@ -93,3 +115,13 @@ class User:
 # print(user.login_attempts)
 # user.reset_login_attempts()
 # print(user.login_attempts)
+
+# Task 5
+# my_stand = IceCreamStand("James' Cream", "Ice Cream")
+# my_stand.describe_resturant()
+# my_stand.desc_flavours()
+
+# Task 6
+user_a = Admin("James", "Bradshaw")
+user_a.desc_user()
+user_a.desc_privilages()
