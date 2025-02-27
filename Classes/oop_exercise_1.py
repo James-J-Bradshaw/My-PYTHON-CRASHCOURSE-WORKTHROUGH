@@ -122,6 +122,6 @@ class Admin(User):
 # my_stand.desc_flavours()
 
 # Task 6
-user_a = Admin("James", "Bradshaw")
-user_a.desc_user()
-user_a.desc_privilages()
+# user_a = Admin("James", "Bradshaw")
+# user_a.desc_user()
+# user_a.desc_privilages()
