@@ -61,8 +61,8 @@ class User:
 
 
 class Admin(User):
-    def __init__(self, name, cuisine):
-        super().__init__(name, cuisine)
+    def __init__(self, first_name, last_name):
+        super().__init__(first_name, last_name)
         self.privilages = ["Can add post", "Can delete post"]
 
     def desc_privilages(self):
