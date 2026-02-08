@@ -1,0 +1,2 @@
+In python, you can create templates for variables called objects
+In python, I learnt how to create a lottery machine
